@@ -1,0 +1,121 @@
+.app__cardDetails {
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    background: var(--color-white);
+}
+
+.app__cardDetails-img img{
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.app__cardDetails-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__cardDetails_info{
+   margin-bottom: 6rem;
+   color: var(--color-gray);
+}
+
+.app__cardDetails-heading{
+    margin-bottom: 2rem;
+}
+
+.app__cardDetails-content{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.app__cardDetails-button{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+}
+
+.counter button{
+    width: 30px;
+    height: auto;
+    color: var(--color-pink);
+    background: var(--color-white);
+    border: 1px solid var(--color-pink);
+    border-radius: 5px;
+    margin: 1px 2px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.counter p{
+    font-size: 30px;
+    border: 1px solid var(--color-pink);
+    border-radius: 5px;
+    width: 40px;
+    height: auto;
+    text-align: center;
+    margin: 1px 3px;
+}
+
+.app__cardDetails-button .custom__button{  
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__cardDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app__cardDetails-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app__cardDetails-img img{
+        width: 400px;
+        height: 450px;
+        object-fit: cover;
+    } 
+
+    .app__cardDetails_info{
+        margin-top: 2rem;
+    }
+   
+    .app__cardDetails-button .custom__button{
+        margin-left: 10px;
+    }     
+}
+@media screen and (max-width: 650px) {
+    .app__cardDetails-img img{
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+    } 
+
+    .app__cardDetails_info{
+        margin-top: 2rem;
+    }
+
+    .app__cardDetails-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .app__cardDetails-button .custom__button{
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}

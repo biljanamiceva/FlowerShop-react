@@ -1,0 +1,131 @@
+ .searchbar2 {
+    display: none;
+}
+.main-container {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 70px;
+    z-index: 1;
+}
+
+.app__dash-nav {
+    min-height: 91vh;
+    width: 250px;
+    background-color: var(--background-color2);
+    position: absolute;
+    top: 0px;
+    left: 00;
+    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 30px 0 20px 10px;
+}
+
+.app__dash-container {
+    height: calc(100vh - 70px);
+    width: 250px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.app__dash-container::-webkit-scrollbar {
+    display: none;
+}
+   
+.app__dash-nav-option{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    gap: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.app__dash-nav-option:hover {
+    border-left: 5px solid var(--color-pink);
+    background-color: var(--color-rose);
+    cursor: pointer;
+}
+    
+.app__dash-nav-upper-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+    
+.option1 {
+    border-left: 5px solid #010058af;
+    background-color: var(--color-pink);
+    color: white;
+    cursor: pointer;
+}
+
+.option1:hover {
+    border-left: 5px solid #010058af;
+    background-color: var(--color-pink);
+}
+   
+  
+@media screen and (max-width: 950px) {
+       
+    .app__dash-nav-option {
+        gap: 30px;
+    }
+
+    .app__dash-nav-option h3 {
+        font-size: 15px;
+    }
+}
+    
+@media screen and (max-width: 850px) {
+    .app__dash-nav-option{
+        gap: 30px;
+    }
+
+    .app__dash-nav-option h3 {
+        font-size: 20px;
+    }
+       
+    .app__dash-container {
+        width: 100vw;
+        position: absolute;
+        transition: all 0.6s ease-in-out;
+        top: 0;
+        left: -100vw;
+    }
+
+    .app__dash-nav {
+        width: 100%;
+        position: absolute;
+    }
+}
+    
+@media screen and (max-width: 490px) {
+    .app__dash-nav-option {
+        gap: 25px;
+    }
+
+    .app__dash-nav-option h3 {
+        font-size: 12px;
+    }
+
+    .app__dash-nav-upper-options {
+        gap: 15px;
+    }    
+}
+        
+    
+    
+    
+    
+    
+    
+    
+    

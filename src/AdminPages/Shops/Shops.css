@@ -1,0 +1,26 @@
+.app__dash-shops{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-pink);
+}
+
+.option2{
+    border-left: 5px solid #010058af;
+    background-color: var(--color-pink);
+    color: white;
+    cursor: pointer;
+}
+.option2:hover {
+    border-left: 5px solid #010058af;
+    background-color: var(--color-pink);
+}
+
+.app__shops-button button{
+    width: 65px;
+    height: 25px;
+    border: 1px solid var(--color-pink);
+    border-radius: 5px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    cursor: pointer;
+}

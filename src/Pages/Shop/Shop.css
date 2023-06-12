@@ -1,0 +1,146 @@
+.app__bg-shop{
+    background: var(--color-white);
+}
+.app__shop {
+    padding: 2rem 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+    background: var(--color-white);
+}
+.app__shop-heading{
+   
+    text-align: center;
+    color: var(--color-gray);
+}
+
+
+.app__shop-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.empty-list img{
+    width: 300px;
+    height: auto;
+   
+}
+.empty-list p{
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+    width: 200px;
+
+  }
+
+  .clear-button {
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    border: 1px solid var(--color-grey);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .price-input-border{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    
+  }
+  
+  .city-dropdown {
+    padding: 8px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+  }
+  
+  .app__shop-heading{
+    display: flex;
+    flex-direction: row;
+}
+
+.price-input-container {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .price-input-label {
+   
+    width: 100%;
+  }
+  
+  .price-slider {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 6px;
+  }
+  
+  .price-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-pink);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .price-slider::-webkit-slider-thumb:hover {
+    background-color: var(--color-pink);
+  }
+  
+  .price-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-pink);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .price-slider::-moz-range-thumb:hover {
+    background-color: var(--color-pink);
+  }
+  
+  .price-display {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+@media screen and (max-width: 1150px) {
+    .app__shop-cards {
+        width: 400px;
+        margin: 1rem 0;
+    } 
+    .app__shop-heading{
+        display: flex;
+        flex-direction:column;
+    }
+    .price-input-container{
+        margin-top: 2rem;
+    }
+}

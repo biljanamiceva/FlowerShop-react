@@ -1,0 +1,22 @@
+.app__testimonials {
+    flex-direction: column;
+    margin-top: 3rem;
+    background: var(--color-white);
+}
+
+.app__testimonials-heading{
+    text-align: center;
+    color: var(--color-gray);
+}
+
+.app__myCarousel{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__myCarousel {
+      height: auto;
+    }  
+}
+
